@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: 150px;
+    padding: 10px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+}
+
+.item {
+    min-width: 100px;
+    padding: 15px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ALIGN ITEMS: STRETCH */
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch .item {
+    height: auto;
+}
+
+/* ALIGN ITEMS: FLEX START */
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-start .item {
+    height: 60px;
+}
+
+/* ALIGN ITEMS: FLEX END */
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-end .item {
+    height: 60px;
+}
+
+/* ALIGN ITEMS: CENTER */
+
+.center {
+    align-items: center;
+}
+
+.center .item {
+    height: 60px;
+}
+
+/* ALIGN ITEMS: BASELINE */
+
+.baseline {
+    align-items: baseline;
+}
+
+.text-small {
+    font-size: 14px;
+}
+
+.text-large {
+    font-size: 30px;
+}
+
+.text-medium {
+    font-size: 20px;
+}
+
+/* COLUMN CENTER */
+
+.column-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+/* CENTER A BOX */
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+}
+
+.center-box {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+}
+
+/* CARD ALIGNMENT */
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background-color: #dbeafe;
+    border-radius: 8px;
+}
+
+.card {
+    flex: 1 1 180px;
+    max-width: 250px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

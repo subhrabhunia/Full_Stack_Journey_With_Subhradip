@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* FLEX START */
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+/* FLEX END */
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/* CENTER */
+
+.center {
+    justify-content: center;
+}
+
+/* SPACE BETWEEN */
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* SPACE AROUND */
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* SPACE EVENLY */
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+/* COLUMN CENTER */
+
+.column-center {
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* CARD LAYOUT */
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #dbeafe;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card {
+    flex: 1 1 150px;
+    max-width: 200px;
+    padding: 30px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
