@@ -1,0 +1,229 @@
+/* CSS FLEX DIRECTION */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #334155;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+/* COMMON FLEX CONTAINER */
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #dbeafe;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.flex-container div {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* FLEX DIRECTION: ROW */
+
+.row {
+    flex-direction: row;
+}
+
+/* FLEX DIRECTION: ROW-REVERSE */
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* FLEX DIRECTION: COLUMN */
+
+.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* FLEX DIRECTION: COLUMN-REVERSE */
+
+.column-reverse {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+/* FLEX DIRECTION WITH DIFFERENT ITEMS */
+
+.different-items {
+    flex-direction: row;
+}
+
+.different-items div {
+    flex: 1;
+    background-color: #0f766e;
+}
+
+/* FLEX DIRECTION WITH DIFFERENT SIZES */
+
+.different-sizes {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.different-sizes div:nth-child(1) {
+    width: 120px;
+}
+
+.different-sizes div:nth-child(2) {
+    width: 220px;
+}
+
+.different-sizes div:nth-child(3) {
+    width: 320px;
+}
+
+/* FLEX DIRECTION WITH GAP */
+
+.gap-row {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.gap-column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* NESTED FLEX DIRECTION */
+
+.nested-parent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #dbeafe;
+    padding: 15px;
+}
+
+.nested-parent > div {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+}
+
+.nested-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ccfbf1;
+}
+
+.nested-child div {
+    background-color: #0f766e;
+    padding: 12px;
+}
+
+/* FLEX DIRECTION WITH CARDS */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #eff6ff;
+    border: 2px solid #bfdbfe;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* PRACTICAL NAVIGATION LAYOUT */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* RESPONSIVE FLEX DIRECTION */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .different-items,
+    .card-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
