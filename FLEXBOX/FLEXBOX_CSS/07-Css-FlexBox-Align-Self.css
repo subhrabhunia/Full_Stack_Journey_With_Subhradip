@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: 160px;
+    padding: 10px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+}
+
+.item {
+    width: 110px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.special {
+    background-color: #dc2626;
+}
+
+/* ALIGN SELF: AUTO */
+
+.auto {
+    align-items: flex-start;
+}
+
+.auto .special {
+    align-self: auto;
+}
+
+/* ALIGN SELF: STRETCH */
+
+.stretch {
+    align-items: center;
+}
+
+.stretch .special {
+    align-self: stretch;
+    height: auto;
+}
+
+/* ALIGN SELF: FLEX START */
+
+.flex-start {
+    align-items: center;
+}
+
+.flex-start .special {
+    align-self: flex-start;
+}
+
+/* ALIGN SELF: FLEX END */
+
+.flex-end {
+    align-items: center;
+}
+
+.flex-end .special {
+    align-self: flex-end;
+}
+
+/* ALIGN SELF: CENTER */
+
+.center {
+    align-items: flex-start;
+}
+
+.center .special {
+    align-self: center;
+}
+
+/* ALIGN SELF: BASELINE */
+
+.baseline {
+    align-items: flex-start;
+}
+
+.baseline .item {
+    height: auto;
+    padding: 15px 10px;
+}
+
+.baseline .special {
+    align-self: baseline;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.large-text {
+    font-size: 28px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+/* COLUMN DIRECTION */
+
+.column {
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+.column .special {
+    align-self: flex-start;
+}
+
+/* PROFILE CARDS */
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #dbeafe;
+    border-radius: 8px;
+}
+
+.profile-card {
+    flex: 1 1 180px;
+    max-width: 250px;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin-bottom: 15px;
+}
+
+.profile-card button {
+    padding: 10px 18px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ALIGN SELF ON ONE CARD */
+
+.profile-card.featured {
+    align-self: flex-end;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

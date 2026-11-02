@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* ALIGN CONTENT: STRETCH */
+
+.stretch {
+    align-content: stretch;
+}
+
+.stretch .item {
+    height: auto;
+}
+
+/* ALIGN CONTENT: FLEX START */
+
+.flex-start {
+    align-content: flex-start;
+}
+
+/* ALIGN CONTENT: FLEX END */
+
+.flex-end {
+    align-content: flex-end;
+}
+
+/* ALIGN CONTENT: CENTER */
+
+.center {
+    align-content: center;
+}
+
+/* ALIGN CONTENT: SPACE BETWEEN */
+
+.space-between {
+    align-content: space-between;
+}
+
+/* ALIGN CONTENT: SPACE AROUND */
+
+.space-around {
+    align-content: space-around;
+}
+
+/* ALIGN CONTENT: SPACE EVENLY */
+
+.space-evenly {
+    align-content: space-evenly;
+}
+
+/* PRACTICAL EXAMPLE: GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: 350px;
+    padding: 15px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+}
+
+.gallery-item {
+    flex: 0 0 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        height: 250px;
+    }
+
+    .gallery {
+        height: 400px;
+    }
+}
