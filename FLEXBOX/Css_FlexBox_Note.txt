@@ -1,0 +1,7 @@
+About CSS Flexbox :
+1.New module in CSS3 to easy align elements in different
+directions and orders.
+2.Flexbox is to gives container the ability to expand and
+shrink elements to best use all the available space.
+3.CSS Flexbox Layout replaces float layout.
+4.New way to build one-dimensional layouts.

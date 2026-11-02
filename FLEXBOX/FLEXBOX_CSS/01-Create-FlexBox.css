@@ -1,0 +1,255 @@
+/* CSS FLEXBOX */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #334155;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* FLEX CONTAINER */
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: #dbeafe;
+    padding: 15px;
+}
+
+/* BASIC FLEXBOX */
+
+.basic-flex div {
+    background-color: #2563eb;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* NORMAL BLOCK ELEMENTS */
+
+.normal-container {
+    background-color: #e2e8f0;
+    padding: 15px;
+}
+
+.normal-container div {
+    background-color: #64748b;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* DISPLAY FLEX */
+
+.display-flex div {
+    background-color: #0f766e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    flex: 1;
+}
+
+/* DISPLAY INLINE-FLEX */
+
+.inline-flex-container {
+    display: inline-flex;
+    gap: 10px;
+    background-color: #ede9fe;
+    padding: 15px;
+    margin: 10px;
+}
+
+.inline-flex-container div {
+    background-color: #7c3aed;
+    color: white;
+    padding: 20px;
+}
+
+/* FLEX CONTAINER AND ITEMS */
+
+.parent-child {
+    border: 3px solid #2563eb;
+}
+
+.parent-child div {
+    background-color: #0f766e;
+    color: white;
+    padding: 25px;
+}
+
+/* DEFAULT FLEX DIRECTION */
+
+.default-direction {
+    flex-direction: row;
+}
+
+.default-direction div {
+    background-color: #9333ea;
+    color: white;
+    padding: 25px;
+}
+
+/* DIFFERENT FLEX ITEMS */
+
+.different-items div {
+    background-color: #2563eb;
+    color: white;
+    padding: 25px;
+    flex: 1;
+    text-align: center;
+}
+
+/* DIFFERENT WIDTHS */
+
+.different-widths {
+    align-items: flex-start;
+}
+
+.different-widths div {
+    background-color: #0f766e;
+    color: white;
+    padding: 20px;
+}
+
+.different-widths div:nth-child(1) {
+    width: 100px;
+}
+
+.different-widths div:nth-child(2) {
+    width: 200px;
+}
+
+.different-widths div:nth-child(3) {
+    width: 300px;
+}
+
+/* NESTED FLEXBOX */
+
+.nested-parent {
+    background-color: #dbeafe;
+}
+
+.nested-parent > div {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+}
+
+.nested-child {
+    display: flex;
+    gap: 10px;
+    background-color: #ccfbf1;
+}
+
+.nested-child div {
+    background-color: #0f766e;
+    padding: 20px;
+}
+
+/* FLEXBOX WITH CARDS */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #eff6ff;
+    border: 2px solid #bfdbfe;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* PRACTICAL NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* RESPONSIVE FLEXBOX */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .different-widths {
+        flex-wrap: wrap;
+    }
+
+    .different-widths div {
+        max-width: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
