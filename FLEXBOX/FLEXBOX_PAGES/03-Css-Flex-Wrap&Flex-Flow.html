@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Wrap & Flex Flow</title>
+    <link rel="stylesheet" href="../FLEXBOX_CSS/03-Css-Flex-Wrap&Flex-Flow.css">
+</head>
+<body>
+
+    <!--
+        CSS FLEX WRAP AND FLEX FLOW
+
+        FLEX WRAP:
+        1. flex-wrap: nowrap
+        2. flex-wrap: wrap
+        3. flex-wrap: wrap-reverse
+
+        FLEX FLOW:
+        1. flex-flow: row nowrap
+        2. flex-flow: row wrap
+        3. flex-flow: column wrap
+        4. flex-flow: column-reverse wrap-reverse
+
+        OTHER PROPERTIES:
+        1. display
+        2. flex-direction
+        3. gap
+        4. justify-content
+        5. align-items
+    -->
+
+    <h1>CSS Flex Wrap & Flex Flow</h1>
+
+    <h2>1. Flex Wrap: Nowrap</h2>
+    <p>All flex items remain on a single line, even if they overflow.</p>
+
+    <div class="flex-container nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h2>2. Flex Wrap: Wrap</h2>
+    <p>Flex items move to the next line when there is not enough space.</p>
+
+    <div class="flex-container wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+    </div>
+
+    <h2>3. Flex Wrap: Wrap Reverse</h2>
+    <p>Flex items wrap onto additional lines in the reverse cross-axis direction.</p>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+    </div>
+
+    <h2>4. Flex Flow: Row Wrap</h2>
+    <p>Items are arranged horizontally and wrap when required.</p>
+
+    <div class="flex-container flow-row">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h2>5. Flex Flow: Column Wrap</h2>
+    <p>Items are arranged vertically and wrap into additional columns.</p>
+
+    <div class="flex-container flow-column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h2>6. Practical Example: Responsive Cards</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>HTML is used to create the structure of a web page.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>CSS is used to style and design web pages.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>JavaScript is used to make web pages interactive.</p>
+        </div>
+
+        <div class="card">
+            <h3>React</h3>
+            <p>React is used to build interactive user interfaces.</p>
+        </div>
+    </div>
+
+</body>
+</html>
