@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Auto Fill and Auto Fit</title>
+    <link rel="stylesheet" href="../GRIDS_CSS/12-Css-Grid-Auto-Fill&Auto-Fit.css">
+</head>
+<body>
+
+    <!--
+    CSS GRID AUTO-FILL AND AUTO-FIT
+
+    1. repeat()
+    2. auto-fill
+    3. auto-fit
+    4. minmax()
+    5. repeat(auto-fill, minmax())
+    6. repeat(auto-fit, minmax())
+    7. Responsive Grid
+    8. Auto-Fill Card Layout
+    9. Auto-Fit Card Layout
+    10. Auto-Fill vs Auto-Fit
+    11. Practical Responsive Website Cards
+    -->
+
+    <h1>CSS Grid Auto-Fill & Auto-Fit</h1>
+
+    <!-- 1. Basic Auto-Fill -->
+    <section class="section">
+        <h2>1. Auto-Fill</h2>
+        <p class="description">
+            Auto-fill creates as many column tracks as can fit,
+            preserving empty tracks when space is available.
+        </p>
+
+        <div class="grid auto-fill">
+            <div class="item">Card 1</div>
+            <div class="item">Card 2</div>
+            <div class="item">Card 3</div>
+        </div>
+    </section>
+
+    <!-- 2. Basic Auto-Fit -->
+    <section class="section">
+        <h2>2. Auto-Fit</h2>
+        <p class="description">
+            Auto-fit collapses empty repeated tracks and allows
+            occupied tracks to use the extra space.
+        </p>
+
+        <div class="grid auto-fit">
+            <div class="item">Card 1</div>
+            <div class="item">Card 2</div>
+            <div class="item">Card 3</div>
+        </div>
+    </section>
+
+    <!-- 3. Auto-Fill with More Items -->
+    <section class="section">
+        <h2>3. Auto-Fill with More Items</h2>
+
+        <div class="grid auto-fill-many">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </section>
+
+    <!-- 4. Auto-Fit with More Items -->
+    <section class="section">
+        <h2>4. Auto-Fit with More Items</h2>
+
+        <div class="grid auto-fit-many">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </section>
+
+    <!-- 5. Auto-Fill with Minimum and Maximum -->
+    <section class="section">
+        <h2>5. Auto-Fill + MinMax</h2>
+
+        <div class="grid fill-minmax">
+            <div class="item">HTML</div>
+            <div class="item">CSS</div>
+            <div class="item">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- 6. Auto-Fit with Minimum and Maximum -->
+    <section class="section">
+        <h2>6. Auto-Fit + MinMax</h2>
+
+        <div class="grid fit-minmax">
+            <div class="item">HTML</div>
+            <div class="item">CSS</div>
+            <div class="item">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- 7. Practical Responsive Cards -->
+    <section class="section">
+        <h2>7. Responsive Website Cards</h2>
+
+        <div class="grid website-cards">
+
+            <article class="card">
+                <h3>HTML</h3>
+                <p>Build the structure of web pages.</p>
+            </article>
+
+            <article class="card">
+                <h3>CSS</h3>
+                <p>Style web pages and create layouts.</p>
+            </article>
+
+            <article class="card">
+                <h3>JavaScript</h3>
+                <p>Add interactivity to websites.</p>
+            </article>
+
+            <article class="card">
+                <h3>React</h3>
+                <p>Build reusable user interfaces.</p>
+            </article>
+
+            <article class="card">
+                <h3>Node.js</h3>
+                <p>Run JavaScript on the server.</p>
+            </article>
+
+            <article class="card">
+                <h3>MongoDB</h3>
+                <p>Store application data.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 8. Auto-Fit Product Cards -->
+    <section class="section">
+        <h2>8. Auto-Fit Product Cards</h2>
+
+        <div class="grid product-cards">
+
+            <article class="product">
+                <h3>Keyboard</h3>
+                <p>₹799</p>
+            </article>
+
+            <article class="product">
+                <h3>Mouse</h3>
+                <p>₹399</p>
+            </article>
+
+            <article class="product">
+                <h3>Headphones</h3>
+                <p>₹999</p>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>
