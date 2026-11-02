@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    gap: 15px;
+}
+
+.item {
+    padding: 25px 15px;
+    border: 2px solid #333;
+    background-color: #e0e7ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ================================================
+   1. AUTO-FILL
+   ================================================ */
+
+.auto-fill {
+    grid-template-columns:
+        repeat(auto-fill, minmax(150px, 1fr));
+}
+
+
+/* ================================================
+   2. AUTO-FIT
+   ================================================ */
+
+.auto-fit {
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
+/* ================================================
+   3. AUTO-FILL WITH MORE ITEMS
+   ================================================ */
+
+.auto-fill-many {
+    grid-template-columns:
+        repeat(auto-fill, minmax(120px, 1fr));
+}
+
+
+/* ================================================
+   4. AUTO-FIT WITH MORE ITEMS
+   ================================================ */
+
+.auto-fit-many {
+    grid-template-columns:
+        repeat(auto-fit, minmax(120px, 1fr));
+}
+
+
+/* ================================================
+   5. AUTO-FILL + MINMAX
+   ================================================ */
+
+.fill-minmax {
+    grid-template-columns:
+        repeat(auto-fill, minmax(180px, 1fr));
+}
+
+
+/* ================================================
+   6. AUTO-FIT + MINMAX
+   ================================================ */
+
+.fit-minmax {
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+}
+
+
+/* ================================================
+   7. RESPONSIVE WEBSITE CARDS
+   ================================================ */
+
+.website-cards {
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    padding: 25px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ================================================
+   8. AUTO-FIT PRODUCT CARDS
+   ================================================ */
+
+.product-cards {
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 20px;
+}
+
+.product {
+    padding: 25px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #e0e7ff;
+}
+
+.product h3 {
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* ================================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+}
