@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Align Items</title>
+    <link rel="stylesheet" href="../FLEXBOX_CSS/05-FlexBox-Align-Items.css">
+</head>
+<body>
+
+    <!--
+        CSS FLEXBOX ALIGN ITEMS
+
+        ALIGN-ITEMS VALUES:
+        1. stretch
+        2. flex-start
+        3. flex-end
+        4. center
+        5. baseline
+
+        OTHER PROPERTIES:
+        1. display: flex
+        2. flex-direction
+        3. justify-content
+        4. align-items
+        5. gap
+    -->
+
+    <h1>CSS Flexbox Align Items</h1>
+
+    <h2>1. Align Items: Stretch</h2>
+    <p>Items stretch to fill the available space along the cross axis.</p>
+
+    <div class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>2. Align Items: Flex Start</h2>
+    <p>Items are aligned at the beginning of the cross axis.</p>
+
+    <div class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>3. Align Items: Flex End</h2>
+    <p>Items are aligned at the end of the cross axis.</p>
+
+    <div class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>4. Align Items: Center</h2>
+    <p>Items are aligned at the center of the cross axis.</p>
+
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>5. Align Items: Baseline</h2>
+    <p>Items are aligned according to their text baselines.</p>
+
+    <div class="container baseline">
+        <div class="item text-small">Small Text</div>
+        <div class="item text-large">Large Text</div>
+        <div class="item text-medium">Medium Text</div>
+    </div>
+
+    <h2>6. Align Items with Column Direction</h2>
+    <p>When flex-direction is column, the cross axis becomes horizontal.</p>
+
+    <div class="container column-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>7. Practical Example: Center a Box</h2>
+
+    <div class="center-container">
+        <div class="center-box">Centered Box</div>
+    </div>
+
+    <h2>8. Practical Example: Card Alignment</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>HTML creates the structure of a web page.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>CSS styles and designs web pages.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>JavaScript makes web pages interactive.</p>
+        </div>
+    </div>
+
+</body>
+</html>

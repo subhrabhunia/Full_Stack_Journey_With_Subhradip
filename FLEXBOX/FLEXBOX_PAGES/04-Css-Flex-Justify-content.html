@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Justify Content</title>
+    <link rel="stylesheet" href="../FLEXBOX_CSS/04-Css-Flex-Justify-content.css">
+</head>
+<body>
+
+    <!--
+        CSS FLEX JUSTIFY CONTENT
+
+        JUSTIFY-CONTENT VALUES:
+        1. flex-start
+        2. flex-end
+        3. center
+        4. space-between
+        5. space-around
+        6. space-evenly
+
+        OTHER PROPERTIES:
+        1. display: flex
+        2. flex-direction
+        3. flex-wrap
+        4. gap
+        5. align-items
+    -->
+
+    <h1>CSS Flex Justify Content</h1>
+
+    <h2>1. Justify Content: Flex Start</h2>
+    <p>Items are aligned at the beginning of the main axis.</p>
+
+    <div class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>2. Justify Content: Flex End</h2>
+    <p>Items are aligned at the end of the main axis.</p>
+
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>3. Justify Content: Center</h2>
+    <p>Items are aligned at the center of the main axis.</p>
+
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>4. Justify Content: Space Between</h2>
+    <p>Equal space is placed between items. No extra space is placed at the edges.</p>
+
+    <div class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>5. Justify Content: Space Around</h2>
+    <p>Equal space is placed around each item.</p>
+
+    <div class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>6. Justify Content: Space Evenly</h2>
+    <p>Equal space is placed between items and at both edges.</p>
+
+    <div class="container space-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>7. Justify Content with Column Direction</h2>
+    <p>When flex-direction is column, justify-content works vertically.</p>
+
+    <div class="container column-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>8. Practical Example: Navigation Bar</h2>
+
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <h2>9. Practical Example: Card Layout</h2>
+
+    <div class="card-container">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+    </div>
+
+</body>
+</html>
