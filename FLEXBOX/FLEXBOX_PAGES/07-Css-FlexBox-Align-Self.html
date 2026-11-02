@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Align Self</title>
+    <link rel="stylesheet" href="../FLEXBOX_CSS/07-Css-FlexBox-Align-Self.css">
+</head>
+<body>
+
+    <!--
+        CSS FLEXBOX ALIGN SELF
+
+        ALIGN-SELF VALUES:
+        1. auto
+        2. stretch
+        3. flex-start
+        4. flex-end
+        5. center
+        6. baseline
+
+        OTHER PROPERTIES:
+        1. display: flex
+        2. align-items
+        3. align-self
+        4. justify-content
+        5. flex-direction
+        6. gap
+    -->
+
+    <h1>CSS Flexbox Align Self</h1>
+
+    <h2>1. Align Self: Auto</h2>
+    <p>Uses the alignment value defined by the parent container.</p>
+
+    <div class="container auto">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item special">Item 3</div>
+    </div>
+
+    <h2>2. Align Self: Stretch</h2>
+    <p>The selected item stretches to fill the available cross-axis space.</p>
+
+    <div class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item special">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>3. Align Self: Flex Start</h2>
+    <p>The selected item moves to the beginning of the cross axis.</p>
+
+    <div class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item special">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>4. Align Self: Flex End</h2>
+    <p>The selected item moves to the end of the cross axis.</p>
+
+    <div class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item special">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>5. Align Self: Center</h2>
+    <p>The selected item moves to the center of the cross axis.</p>
+
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item special">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>6. Align Self: Baseline</h2>
+    <p>The selected item aligns according to the text baseline.</p>
+
+    <div class="container baseline">
+        <div class="item small-text">Small Text</div>
+        <div class="item special large-text">Large Text</div>
+        <div class="item medium-text">Medium Text</div>
+    </div>
+
+    <h2>7. Align Self with Column Direction</h2>
+    <p>In a column layout, align-self controls horizontal alignment.</p>
+
+    <div class="container column">
+        <div class="item">Item 1</div>
+        <div class="item special">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>8. Practical Example: Profile Cards</h2>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <h3>Student 1</h3>
+            <p>Web Developer</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="profile-card featured">
+            <h3>Student 2</h3>
+            <p>MERN Stack Developer</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="profile-card">
+            <h3>Student 3</h3>
+            <p>Python Developer</p>
+            <button>View Profile</button>
+        </div>
+    </div>
+
+</body>
+</html>
