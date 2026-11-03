@@ -1,0 +1,108 @@
+Web-Based Scripting Language:-
+| Client-Side Script     | Server-Side Script |
+| ---------------------- | ------------------ |
+| JavaScript             | PHP                |
+| VBScript               | .NET (ASP.NET)     |
+| HTML (Markup Language) | Python             |
+
+1.Client Side Script: JavaScript, VBScript
+2.Server Side Script: PHP, .NET, Python
+
+Remember: JavaScript mainly runs on the client side, while PHP, Python, and ASP.NET run on the server side. HTML is a markup language, not a scripting language.
+
+Why We learn JavaScript?
+JavaScript is a Event Based Programming Language
+1.Click
+2.Double Click
+3.Right Click
+4.Mouse Hover
+5.Mouse Out
+6.Drag Drop
+7.Key Press
+8.Key Up
+9.Load
+10.Unload
+11.Resize
+12.Scroll
+
+Benefits of learning JavaScript:-
+1.Web Development. In this we use:-
+a.jQuery
+b.Angular Js
+c.React Js
+d.VueJS
+e.NodeJS
+
+2.Desktop App Development. In this we use:-
+a.Electron Js
+
+3.Mobile App Development. In this we use:-
+a.Angular Js
+b.React Js
+c.VueJS
+d.React Native
+e.NodeJS
+
+Uses of JavaScript in Web Development:-
+1.Dropdown Menu
+2.Animated Sliders
+3.Maps
+4.Chart-Graphs
+5.Pop-up window
+6.Audio Players
+7.Video Players
+8.Zoom effect
+9.Animated Gallery
+10.Form Validations
+11.Accordions
+12.Calendar
+
+Software Requirement for JavaScript:-
+1.HTML Editor
+2.Web Browser
+
+Editor for JavaScript:-
+1.Notepad
+2.Notepad++
+3.VS Code
+4.Sublime
+5.Atom
+
+Web Browser for JavaScript:-
+1.Google Chrome
+2.Mozilla Firebox
+3.Internet Explorer
+4.Safari
+
+2 Ways to Implement JavaScript:-
+1.Inpage JavaScript
+2.External JavaScript
+
+Inpage JavaScript:-
+<html>
+<head>
+<script>
+alert("Welcome to Web Page.");
+</script>
+</head>
+<body>
+<h1>Hello World</h1>
+<script>
+document.write("Welcome to page");
+</stript>
+</body>
+</html>
+
+External JavaScript File:-
+HTML File (index.html)
+<html>
+<head>
+<script src="myScript.js"></script>
+</head>
+<body>
+<h1>Hello World</h1>
+</body>
+</html>
+
+JavaScript File (myScript.js)
+alert("Welcome to Web Page");
