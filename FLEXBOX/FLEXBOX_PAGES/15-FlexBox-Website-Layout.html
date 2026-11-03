@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website Layout</title>
+    <link rel="stylesheet" href="../FLEXBOX_CSS/15-FlexBox-Website-Layout.css">
+</head>
+<body>
+
+    <!--
+    CSS FLEXBOX WEBSITE LAYOUT
+
+    Topics:
+    1. display: flex
+    2. flex-direction
+    3. flex-wrap
+    4. justify-content
+    5. align-items
+    6. flex-grow
+    7. flex-shrink
+    8. flex-basis
+    9. gap
+    10. Responsive website layout
+
+    Website Sections:
+    Header
+    Navigation
+    Hero Section
+    Main Content
+    Sidebar
+    Cards
+    Footer
+    -->
+
+    <header class="header">
+        <div class="logo">MyWebsite</div>
+
+        <div class="header-info">
+            <p>Learn HTML, CSS and JavaScript</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Website</h1>
+            <p>
+                Learn web development and create beautiful
+                responsive websites using CSS Flexbox.
+            </p>
+            <button>Explore More</button>
+        </div>
+    </section>
+
+    <div class="main-layout">
+
+        <main class="main-content">
+
+            <h2>Our Services</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML is used to create the structure
+                        of a web page.
+                    </p>
+                    <button>Read More</button>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS is used to style and design
+                        beautiful web pages.
+                    </p>
+                    <button>Read More</button>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript makes websites interactive
+                        and dynamic.
+                    </p>
+                    <button>Read More</button>
+                </div>
+
+            </div>
+
+            <section class="about-section">
+                <h2>About Us</h2>
+                <p>
+                    We provide web development learning
+                    resources for beginners.
+                    Our website demonstrates how Flexbox
+                    can create flexible and responsive layouts.
+                </p>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+
+            <h2>Sidebar</h2>
+
+            <a href="#">Web Development</a>
+            <a href="#">HTML Tutorials</a>
+            <a href="#">CSS Tutorials</a>
+            <a href="#">JavaScript Tutorials</a>
+            <a href="#">Contact Us</a>
+
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 MyWebsite | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

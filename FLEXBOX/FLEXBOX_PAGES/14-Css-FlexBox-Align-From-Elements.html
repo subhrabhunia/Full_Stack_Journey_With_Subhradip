@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Flexbox Align Elements</title>
+
+    <link rel="stylesheet" href="../FLEXBOX_CSS/14-Css-FlexBox-Align-From-Elements.css">
+</head>
+<body>
+
+    <!--
+    CSS FLEXBOX ALIGN ELEMENTS
+
+    Topics:
+    1. Introduction to Flexbox alignment
+    2. Main axis and cross axis
+    3. justify-content
+    4. align-items
+    5. align-content
+    6. align-self
+    7. margin auto
+    8. Horizontal alignment
+    9. Vertical alignment
+    10. Center alignment
+    11. Navigation layout
+    12. Website layout
+    13. Flexbox cards
+    14. Responsive design
+
+    Properties:
+    display
+    flex-direction
+    flex-wrap
+    justify-content
+    align-items
+    align-content
+    align-self
+    gap
+    margin
+    padding
+    width
+    height
+    min-width
+    max-width
+    box-sizing
+    background
+    border
+    border-radius
+    box-shadow
+    font-size
+    font-weight
+    text-align
+    color
+    transition
+    @media
+    -->
+
+    <header class="header">
+        <h1>CSS Flexbox</h1>
+        <p>Align Elements</p>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. JUSTIFY CONTENT -->
+
+        <section class="section">
+            <h2>1. Justify Content Center</h2>
+
+            <div class="flex-container justify-center">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <!-- 2. ALIGN ITEMS -->
+
+        <section class="section">
+            <h2>2. Align Items Center</h2>
+
+            <div class="flex-container align-center">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <!-- 3. CENTER BOTH AXES -->
+
+        <section class="section">
+            <h2>3. Center Both Axes</h2>
+
+            <div class="flex-container center-both">
+                <div class="box">Centered Element</div>
+            </div>
+        </section>
+
+        <!-- 4. ALIGN SELF -->
+
+        <section class="section">
+            <h2>4. Align Self</h2>
+
+            <div class="flex-container align-self-example">
+                <div class="box self-start">Start</div>
+                <div class="box self-center">Center</div>
+                <div class="box self-end">End</div>
+            </div>
+        </section>
+
+        <!-- 5. ALIGN CONTENT -->
+
+        <section class="section">
+            <h2>5. Align Content</h2>
+
+            <div class="flex-container align-content-example">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+                <div class="box">React</div>
+                <div class="box">Node.js</div>
+                <div class="box">MongoDB</div>
+            </div>
+        </section>
+
+        <!-- 6. MARGIN AUTO -->
+
+        <section class="section">
+            <h2>6. Margin Auto</h2>
+
+            <div class="flex-container margin-auto-example">
+                <div class="box">Home</div>
+                <div class="box">About</div>
+                <div class="box auto-item">Contact</div>
+            </div>
+        </section>
+
+        <!-- 7. NAVIGATION -->
+
+        <section class="section">
+            <h2>7. Navigation Alignment</h2>
+
+            <nav class="navigation">
+
+                <div class="logo">MyWebsite</div>
+
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <button class="login-button">Login</button>
+
+            </nav>
+        </section>
+
+        <!-- 8. WEBSITE LAYOUT -->
+
+        <section class="section">
+            <h2>8. Website Layout</h2>
+
+            <div class="website-layout">
+
+                <aside class="sidebar">
+                    <h3>Sidebar</h3>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                </aside>
+
+                <div class="main-content">
+
+                    <div class="content-header">
+                        <h3>Dashboard</h3>
+                        <button>Profile</button>
+                    </div>
+
+                    <div class="content-cards">
+
+                        <div class="card">
+                            <h4>Users</h4>
+                            <p>120</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>Projects</h4>
+                            <p>25</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>Tasks</h4>
+                            <p>75</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 9. FLEXBOX CARDS -->
+
+        <section class="section">
+            <h2>9. Flexbox Cards</h2>
+
+            <div class="card-container">
+
+                <div class="profile-card">
+                    <h3>HTML</h3>
+                    <p>Structure of websites.</p>
+                    <button>Learn More</button>
+                </div>
+
+                <div class="profile-card">
+                    <h3>CSS</h3>
+                    <p>Design of websites.</p>
+                    <button>Learn More</button>
+                </div>
+
+                <div class="profile-card">
+                    <h3>JavaScript</h3>
+                    <p>Website functionality.</p>
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>CSS Flexbox Align Elements Example</p>
+    </footer>
+
+</body>
+</html>

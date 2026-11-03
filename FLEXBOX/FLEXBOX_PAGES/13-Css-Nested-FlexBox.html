@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Nested Flexbox</title>
+
+    <link rel="stylesheet" href="../FLEXBOX_CSS/13-Css-Nested-FlexBox.css">
+</head>
+<body>
+
+    <!--
+    CSS NESTED FLEXBOX
+
+    Topics:
+    1. Introduction to nested Flexbox
+    2. Flex container inside another Flex container
+    3. Outer Flexbox
+    4. Inner Flexbox
+    5. Nested row layout
+    6. Nested column layout
+    7. Website header
+    8. Sidebar and main content
+    9. Nested navigation
+    10. Profile cards
+    11. Dashboard layout
+    12. Responsive nested Flexbox
+
+    Properties:
+    display
+    flex-direction
+    flex-wrap
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    justify-content
+    align-items
+    align-self
+    gap
+    margin
+    padding
+    width
+    min-width
+    max-width
+    height
+    box-sizing
+    background
+    border
+    border-radius
+    box-shadow
+    font-size
+    font-weight
+    text-align
+    color
+    transition
+    @media
+    -->
+
+    <header class="header">
+        <h1>CSS Nested Flexbox</h1>
+        <p>Flexbox Inside Flexbox</p>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. BASIC NESTED FLEXBOX -->
+
+        <section class="section">
+            <h2>1. Basic Nested Flexbox</h2>
+
+            <div class="outer-flex">
+
+                <div class="outer-item">Item 1</div>
+
+                <div class="inner-flex">
+
+                    <div class="inner-item">Inner 1</div>
+                    <div class="inner-item">Inner 2</div>
+                    <div class="inner-item">Inner 3</div>
+
+                </div>
+
+                <div class="outer-item">Item 3</div>
+
+            </div>
+        </section>
+
+        <!-- 2. NESTED ROW FLEXBOX -->
+
+        <section class="section">
+            <h2>2. Nested Row Flexbox</h2>
+
+            <div class="row-layout">
+
+                <div class="row-item">HTML</div>
+
+                <div class="row-inner">
+
+                    <div class="row-child">CSS</div>
+                    <div class="row-child">JavaScript</div>
+                    <div class="row-child">React</div>
+
+                </div>
+
+                <div class="row-item">Node.js</div>
+
+            </div>
+        </section>
+
+        <!-- 3. NESTED COLUMN FLEXBOX -->
+
+        <section class="section">
+            <h2>3. Nested Column Flexbox</h2>
+
+            <div class="column-layout">
+
+                <div class="column-header">Header</div>
+
+                <div class="column-inner">
+
+                    <div class="column-child">Content 1</div>
+                    <div class="column-child">Content 2</div>
+                    <div class="column-child">Content 3</div>
+
+                </div>
+
+                <div class="column-footer">Footer</div>
+
+            </div>
+        </section>
+
+        <!-- 4. NESTED WEBSITE HEADER -->
+
+        <section class="section">
+            <h2>4. Nested Website Header</h2>
+
+            <div class="website-header">
+
+                <div class="website-logo">
+                    MyWebsite
+                </div>
+
+                <div class="header-navigation">
+
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+
+                </div>
+
+                <div class="header-buttons">
+
+                    <button class="login-button">Login</button>
+                    <button class="signup-button">Sign Up</button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. SIDEBAR AND MAIN CONTENT -->
+
+        <section class="section">
+            <h2>5. Sidebar and Main Content</h2>
+
+            <div class="website-layout">
+
+                <aside class="sidebar">
+
+                    <h3>Sidebar</h3>
+
+                    <a href="#">Dashboard</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+
+                </aside>
+
+                <div class="main-content">
+
+                    <div class="content-header">
+
+                        <h3>Dashboard</h3>
+
+                        <div class="content-actions">
+                            <button>Search</button>
+                            <button>Profile</button>
+                        </div>
+
+                    </div>
+
+                    <div class="content-cards">
+
+                        <div class="dashboard-card">
+                            <h4>Users</h4>
+                            <p>120</p>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h4>Projects</h4>
+                            <p>25</p>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h4>Tasks</h4>
+                            <p>75</p>
+                        </div>
+
+                    </div>
+
+                    <div class="content-footer">
+                        Dashboard Content
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. NESTED PROFILE CARDS -->
+
+        <section class="section">
+            <h2>6. Nested Profile Cards</h2>
+
+            <div class="profile-container">
+
+                <div class="profile-card">
+
+                    <div class="profile-header">
+
+                        <div class="profile-avatar">SB</div>
+
+                        <div class="profile-info">
+                            <h3>Subhradip</h3>
+                            <p>Web Developer</p>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-details">
+                        <p>BCA Student</p>
+                        <p>Frontend Developer</p>
+                    </div>
+
+                    <div class="profile-footer">
+                        <button>View Profile</button>
+                        <button>Contact</button>
+                    </div>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <div class="profile-header">
+
+                        <div class="profile-avatar">JD</div>
+
+                        <div class="profile-info">
+                            <h3>John Doe</h3>
+                            <p>UI Designer</p>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-details">
+                        <p>Design Student</p>
+                        <p>UI/UX Designer</p>
+                    </div>
+
+                    <div class="profile-footer">
+                        <button>View Profile</button>
+                        <button>Contact</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. NESTED FLEXBOX WEBSITE -->
+
+        <section class="section">
+            <h2>7. Complete Nested Website Layout</h2>
+
+            <div class="complete-layout">
+
+                <div class="complete-header">
+
+                    <div class="complete-logo">
+                        TechWebsite
+                    </div>
+
+                    <div class="complete-nav">
+                        <a href="#">Home</a>
+                        <a href="#">Courses</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                </div>
+
+                <div class="complete-main">
+
+                    <aside class="complete-sidebar">
+
+                        <h3>Categories</h3>
+
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">React</a>
+
+                    </aside>
+
+                    <div class="complete-content">
+
+                        <div class="complete-title">
+                            <h3>Learn Web Development</h3>
+                            <p>Explore web development technologies.</p>
+                        </div>
+
+                        <div class="complete-cards">
+
+                            <div class="complete-card">
+                                <h4>HTML</h4>
+                                <p>Structure of websites.</p>
+                            </div>
+
+                            <div class="complete-card">
+                                <h4>CSS</h4>
+                                <p>Design of websites.</p>
+                            </div>
+
+                            <div class="complete-card">
+                                <h4>JavaScript</h4>
+                                <p>Website functionality.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="complete-footer">
+                    <p>Nested Flexbox Website</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>CSS Nested Flexbox Example</p>
+    </footer>
+
+</body>
+</html>
