@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Flexbox Flex Shrink</title>
+
+    <link rel="stylesheet" href="../FLEXBOX_CSS/11-Css-FlexBox-Flex-Shrink.css">
+</head>
+<body>
+
+    <!--
+    CSS FLEXBOX FLEX-SHRINK
+
+    Topics:
+    1. Introduction to flex-shrink
+    2. flex-shrink property
+    3. flex-shrink: 0
+    4. flex-shrink: 1
+    5. flex-shrink: 2
+    6. flex-shrink: 3
+    7. flex-shrink with flex-basis
+    8. flex-shrink with flex-grow
+    9. Flexbox navigation
+    10. Flexbox cards
+    11. Responsive layout
+    12. Overflow handling
+
+    Properties:
+    display
+    flex-direction
+    flex-wrap
+    flex-shrink
+    flex-grow
+    flex-basis
+    gap
+    width
+    min-width
+    max-width
+    padding
+    margin
+    box-sizing
+    justify-content
+    align-items
+    background
+    border
+    border-radius
+    box-shadow
+    font-size
+    font-weight
+    text-align
+    color
+    overflow
+    transition
+    flex
+    @media
+    -->
+
+    <header class="header">
+        <h1>CSS Flexbox</h1>
+        <p>Flex Shrink Property</p>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2>1. Flex Shrink 0</h2>
+
+            <p class="description">
+                Items do not shrink and may overflow the container.
+            </p>
+
+            <div class="flex-container shrink-zero">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>2. Flex Shrink 1</h2>
+
+            <p class="description">
+                Items shrink when the container does not have enough space.
+            </p>
+
+            <div class="flex-container shrink-one">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>3. Flex Shrink 2</h2>
+
+            <p class="description">
+                The second item has a higher shrink factor.
+            </p>
+
+            <div class="flex-container shrink-two">
+                <div class="box item-one">HTML</div>
+                <div class="box item-two">CSS</div>
+                <div class="box item-three">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>4. Different Flex Shrink Values</h2>
+
+            <div class="flex-container different-shrink">
+                <div class="box shrink-1">Shrink 1</div>
+                <div class="box shrink-2">Shrink 2</div>
+                <div class="box shrink-3">Shrink 3</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>5. Flex Shrink with Flex Basis</h2>
+
+            <div class="flex-container basis-shrink">
+                <div class="box basis-one">HTML</div>
+                <div class="box basis-two">CSS</div>
+                <div class="box basis-three">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>6. Flex Shrink with Flex Grow</h2>
+
+            <div class="flex-container grow-shrink">
+                <div class="box grow-one">HTML</div>
+                <div class="box grow-two">CSS</div>
+                <div class="box grow-three">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>7. Flexbox Navigation</h2>
+
+            <nav class="navigation">
+
+                <div class="logo">MyWebsite</div>
+
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </nav>
+        </section>
+
+        <section class="section">
+            <h2>8. Flexbox Cards</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML creates the structure of
+                        a web page.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS is used to design and
+                        style web pages.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript adds functionality
+                        and interactivity.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>CSS Flexbox Flex Shrink Example</p>
+    </footer>
+
+</body>
+</html>

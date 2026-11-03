@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Flexbox Margin Auto</title>
+
+    <link rel="stylesheet" href="../FLEXBOX_CSS/12-Css-FlexBox-Margin-Auto.css">
+</head>
+<body>
+
+    <!--
+    CSS FLEXBOX MARGIN AUTO
+
+    Topics:
+    1. Introduction to margin auto
+    2. margin-left: auto
+    3. margin-right: auto
+    4. margin-top: auto
+    5. margin-bottom: auto
+    6. margin: auto
+    7. Push item to the right
+    8. Push item to the left
+    9. Push item to the bottom
+    10. Center item using auto margins
+    11. Flexbox navigation
+    12. Flexbox cards
+    13. Responsive layout
+
+    Properties:
+    display
+    flex-direction
+    flex-wrap
+    justify-content
+    align-items
+    margin
+    margin-left
+    margin-right
+    margin-top
+    margin-bottom
+    gap
+    width
+    height
+    padding
+    box-sizing
+    background
+    border
+    border-radius
+    box-shadow
+    font-size
+    font-weight
+    text-align
+    color
+    transition
+    @media
+    -->
+
+    <header class="header">
+        <h1>CSS Flexbox</h1>
+        <p>Margin Auto Property</p>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2>1. Margin Left Auto</h2>
+
+            <div class="flex-container left-auto">
+                <div class="box">Home</div>
+                <div class="box">About</div>
+                <div class="box auto-left">Contact</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>2. Margin Right Auto</h2>
+
+            <div class="flex-container right-auto">
+                <div class="box auto-right">Home</div>
+                <div class="box">About</div>
+                <div class="box">Contact</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>3. Margin Top Auto</h2>
+
+            <div class="flex-container top-auto">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box auto-top">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>4. Margin Bottom Auto</h2>
+
+            <div class="flex-container bottom-auto">
+                <div class="box auto-bottom">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>5. Margin Auto Center</h2>
+
+            <div class="flex-container center-auto">
+                <div class="box auto-center">Center Item</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>6. Margin Auto in Navigation</h2>
+
+            <nav class="navigation">
+
+                <div class="logo">MyWebsite</div>
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+
+                <a href="#" class="login">Login</a>
+
+            </nav>
+        </section>
+
+        <section class="section">
+            <h2>7. Margin Auto in Website Layout</h2>
+
+            <div class="website-layout">
+
+                <div class="sidebar">
+                    <h3>Sidebar</h3>
+                    <p>Menu Item 1</p>
+                    <p>Menu Item 2</p>
+                    <p>Menu Item 3</p>
+                </div>
+
+                <div class="content">
+                    <h3>Main Content</h3>
+                    <p>
+                        This is the main website content.
+                        The footer button is pushed to the
+                        bottom using margin-top: auto.
+                    </p>
+
+                    <button class="read-more">Read More</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>8. Flexbox Cards</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML creates the structure
+                        of a web page.
+                    </p>
+
+                    <button>Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS is used to design and
+                        style web pages.
+                    </p>
+
+                    <button>Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript adds functionality
+                        and interactivity to websites.
+                    </p>
+
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>CSS Flexbox Margin Auto Example</p>
+    </footer>
+
+</body>
+</html>
