@@ -1,0 +1,291 @@
+/* CSS FLEXBOX WEBSITE LAYOUT */
+
+/* UNIVERSAL SELECTOR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-info {
+    font-size: 16px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    background-color: #444;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #666;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 300px;
+    padding: 40px 20px;
+
+    background-color: #667eea;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* MAIN WEBSITE LAYOUT */
+
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+/* CARD CONTAINER */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARDS */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    flex: 1 1 200px;
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #667eea;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    margin-bottom: 10px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    flex: 0 0 250px;
+
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .main-layout {
+        padding: 0 12px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+}

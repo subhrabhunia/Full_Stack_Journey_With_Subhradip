@@ -1,0 +1,621 @@
+/* CSS NESTED FLEXBOX */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    background: #4338ca;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* SECTION */
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #4338ca;
+}
+
+/* 1. BASIC NESTED FLEXBOX */
+
+.outer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #e0e7ff;
+    border: 2px solid #818cf8;
+    border-radius: 8px;
+}
+
+.outer-item {
+    flex: 1 1 100px;
+    background: #4338ca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.inner-flex {
+    display: flex;
+    flex: 2 1 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #c7d2fe;
+    border: 2px solid #6366f1;
+    border-radius: 8px;
+}
+
+.inner-item {
+    flex: 1 1 70px;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 2. NESTED ROW FLEXBOX */
+
+.row-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #e0f2fe;
+    border-radius: 8px;
+}
+
+.row-item {
+    flex: 1 1 100px;
+    background: #0369a1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.row-inner {
+    display: flex;
+    flex: 2 1 250px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background: #bae6fd;
+    border-radius: 8px;
+}
+
+.row-child {
+    flex: 1 1 80px;
+    background: #0284c7;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 3. NESTED COLUMN FLEXBOX */
+
+.column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #f3e8ff;
+    border-radius: 8px;
+}
+
+.column-header {
+    background: #7e22ce;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.column-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background: #e9d5ff;
+    border-radius: 8px;
+}
+
+.column-child {
+    background: #9333ea;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.column-footer {
+    background: #6b21a8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* 4. NESTED WEBSITE HEADER */
+
+.website-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 8px;
+}
+
+.website-logo {
+    flex: 1 1 150px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-navigation {
+    display: flex;
+    flex: 2 1 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.header-navigation a:hover {
+    background: #4338ca;
+}
+
+.header-buttons {
+    display: flex;
+    flex: 1 1 150px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
+    background: #334155;
+    color: white;
+}
+
+.signup-button {
+    background: #2563eb;
+    color: white;
+}
+
+/* 5. SIDEBAR AND MAIN CONTENT */
+
+.website-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    gap: 10px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #4338ca;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.content-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.content-header h3 {
+    color: #4338ca;
+}
+
+.content-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-actions button {
+    padding: 8px 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 120px;
+    gap: 10px;
+    padding: 20px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
+
+.dashboard-card h4 {
+    color: #1d4ed8;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-footer {
+    padding: 15px;
+    background: #e2e8f0;
+    border-radius: 6px;
+}
+
+/* 6. NESTED PROFILE CARDS */
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    gap: 20px;
+    padding: 20px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-avatar {
+    display: flex;
+    flex: 0 0 60px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #2563eb;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.profile-info h3 {
+    color: #1d4ed8;
+}
+
+.profile-info p {
+    color: #64748b;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.profile-footer button {
+    flex: 1 1 100px;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 7. COMPLETE NESTED WEBSITE */
+
+.complete-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+/* WEBSITE HEADER */
+
+.complete-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 8px;
+}
+
+.complete-logo {
+    flex: 1 1 150px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.complete-nav {
+    display: flex;
+    flex: 2 1 250px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.complete-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.complete-nav a:hover {
+    background: #4338ca;
+}
+
+/* WEBSITE MAIN */
+
+.complete-main {
+    display: flex;
+    gap: 15px;
+}
+
+/* WEBSITE SIDEBAR */
+
+.complete-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 180px;
+    gap: 10px;
+    padding: 20px;
+    background: #334155;
+    border-radius: 8px;
+}
+
+.complete-sidebar h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.complete-sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.complete-sidebar a:hover {
+    background: #4338ca;
+}
+
+/* WEBSITE CONTENT */
+
+.complete-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.complete-title h3 {
+    color: #4338ca;
+    margin-bottom: 5px;
+}
+
+.complete-title p {
+    color: #64748b;
+}
+
+/* NESTED CONTENT CARDS */
+
+.complete-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.complete-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 150px;
+    gap: 10px;
+    padding: 20px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
+
+.complete-card h4 {
+    color: #1d4ed8;
+}
+
+.complete-card p {
+    color: #475569;
+}
+
+/* WEBSITE FOOTER */
+
+.complete-footer {
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 19px;
+    }
+
+    .website-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: auto;
+    }
+
+    .content-cards {
+        flex-direction: column;
+    }
+
+    .complete-main {
+        flex-direction: column;
+    }
+
+    .complete-sidebar {
+        flex-basis: auto;
+    }
+
+    .complete-cards {
+        flex-direction: column;
+    }
+
+    .header-buttons {
+        justify-content: flex-start;
+    }
+}
