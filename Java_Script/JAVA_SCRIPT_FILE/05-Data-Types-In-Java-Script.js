@@ -1,6 +1,11 @@
 
 // DATA TYPES IN JAVASCRIPT:-
 
+// Primitive
+// Non-Primitive
+
+
+// PRIMITIVE DATA TYPES:-
 
 // 1. STRING:-
 
@@ -37,6 +42,8 @@ let bigNumber = 12345678901234567890n;
 
 let symbol = Symbol("JavaScript");
 
+
+// NON-PRIMITIVE DATA TYPES:-
 
 // 8. OBJECT:-
 
@@ -76,6 +83,9 @@ document.write(bigNumber + "<br>");
 document.write("<h2>SYMBOL</h2>");
 document.write(symbol.toString() + "<br>");
 
+
+// NON-PRIMITIVE:-
+
 document.write("<h2>OBJECT</h2>");
 document.write(student.firstName + "<br>");
 document.write(student.lastName + "<br>");
@@ -101,12 +111,30 @@ document.write(typeof student + "<br>");
 document.write(typeof fruits + "<br>");
 
 
-// Data Type	Example
-// String	  "Subhradip"
-// Number	  20, 99.50
-// Boolean	  true, false
-// Undefined 	let x;
-// Null	  let y = null;
-// BigInt	   123456789n
-// Symbol	 Symbol("JavaScript")
-// Object	  {firstName: "Subhradip"}
+// DATA TYPES:-
+
+// Primitive:-
+
+// String       "Subhradip"
+// Number       20, 99.50
+// Boolean      true, false
+// Undefined    let x;
+// Null         let y = null;
+// BigInt       123456789n
+// Symbol       Symbol("JavaScript")
+
+
+// Non-Primitive:-
+
+// Object       {firstName: "Subhradip"}
+// Array        ["Apple", "Mango", "Banana"]
+
+
+// | Primitive                             | Non-Primitive                          |
+// | ------------------------------------- | -------------------------------------- |
+// | 1. Stores simple values.              | 1. Stores complex values.              |
+// | 2. Immutable (cannot be changed).     | 2. Objects and arrays can be modified. |
+// | 3. Copies values when assigned.       | 3. Copies references when assigned.    |
+// | 4. Compared by value.                 | 4. Objects compared by reference.      |
+// | 5. Examples: String, Number, Boolean. | 5. Examples: Object, Array, Function.  |
+
