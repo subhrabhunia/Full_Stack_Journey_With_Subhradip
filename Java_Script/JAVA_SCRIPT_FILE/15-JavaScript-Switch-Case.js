@@ -5,35 +5,35 @@ let day = 3;
 
 switch (day) {
     case 1:
-        document.write("Monday");
+        document.write("Monday<br>");
         break;
 
     case 2:
-        document.write("Tuesday");
+        document.write("Tuesday<br>");
         break;
 
     case 3:
-        document.write("Wednesday");
+        document.write("Wednesday<br>");
         break;
 
     case 4:
-        document.write("Thursday");
+        document.write("Thursday<br>");
         break;
 
     case 5:
-        document.write("Friday");
+        document.write("Friday<br>");
         break;
 
     case 6:
-        document.write("Saturday");
+        document.write("Saturday<br>");
         break;
 
     case 7:
-        document.write("Sunday");
+        document.write("Sunday<br>");
         break;
 
     default:
-        document.write("Invalid Day");
+        document.write("Invalid Day<br>");
 }
 
 // Example 2: Calculator
@@ -42,25 +42,49 @@ let a = 10;
 let b = 5;
 let operator = "+";
 
-document.write("<br><br>");
+document.write("<br>");
 
 switch (operator) {
     case "+":
-        document.write("Addition: " + (a + b));
+        document.write("Addition: " + (a + b) + "<br>");
         break;
 
     case "-":
-        document.write("Subtraction: " + (a - b));
+        document.write("Subtraction: " + (a - b) + "<br>");
         break;
 
     case "*":
-        document.write("Multiplication: " + (a * b));
+        document.write("Multiplication: " + (a * b) + "<br>");
         break;
 
     case "/":
-        document.write("Division: " + (a / b));
+        document.write("Division: " + (a / b) + "<br>");
         break;
 
     default:
-        document.write("Invalid Operator");
+        document.write("Invalid Operator<br>");
+}
+
+// Example 3: Multiple Cases in One Line
+
+let days = 1;
+
+document.write("<br>");
+
+switch (days) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        document.write("Weekday<br>");
+        break;
+
+    case 6:
+    case 7:
+        document.write("Weekend<br>");
+        break;
+
+    default:
+        document.write("Invalid Day<br>");
 }
