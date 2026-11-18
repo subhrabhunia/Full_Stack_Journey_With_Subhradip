@@ -9,7 +9,7 @@ let c = 15;
 document.write("Logical AND (&&): " + (a > b && a < c) + "<br>");
 
 // 2. Logical OR (||)
-document.write("Logical OR (||): " + (a > b || a > c) + "<br>");
+document.write("Logical OR (||): " + (a > b || a > c) + "<br>");     
 
 // 3. Logical NOT (!)
 document.write("Logical NOT (!): " + !(a > b) + "<br>");
