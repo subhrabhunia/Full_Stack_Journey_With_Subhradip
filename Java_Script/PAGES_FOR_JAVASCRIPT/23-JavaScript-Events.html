@@ -1,0 +1,64 @@
+<!-- JavaScript Events are actions or occurrences that happen in the browser. JavaScript can respond to these events and execute code. -->
+ <!-- ## **Types of JavaScript Events**
+
+| Event Name   | Event Attribute | Description                                                          |
+| ------------ | --------------- | -------------------------------------------------------------------- |
+| Click        | `onclick`       | Occurs when an element is clicked.                                   |
+| Double Click | `ondblclick`    | Occurs when an element is double-clicked.                            |
+| Right Click  | `oncontextmenu` | Occurs when the right mouse button is clicked.                       |
+| Mouse Hover  | `onmouseenter`  | Occurs when the mouse pointer enters an element.                     |
+| Mouse Out    | `onmouseout`    | Occurs when the mouse pointer leaves an element.                     |
+| Mouse Down   | `onmousedown`   | Occurs when a mouse button is pressed.                               |
+| Mouse Up     | `onmouseup`     | Occurs when a mouse button is released.                              |
+| Key Press    | `onkeypress`    | Occurs when a character key is pressed. (Deprecated; use `keydown`.) |
+| Key Up       | `onkeyup`       | Occurs when a keyboard key is released.                              |
+| Load         | `onload`        | Occurs when a webpage or resource finishes loading.                  |
+| Unload       | `onunload`      | Occurs when a document is being unloaded.                            |
+| Resize       | `onresize`      | Occurs when the browser window is resized.                           |
+| Scroll       | `onscroll`      | Occurs when an element or webpage is scrolled.                       |-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body onload="pageLoad()" onunload="pageUnload()" onresize="pageResize()" onscroll="pageScroll()">
+
+    <h2>JavaScript Events Example</h2>
+
+    <button onclick="clickEvent()">Click</button>
+    <br><br>
+
+    <button ondblclick="doubleClickEvent()">Double Click</button>
+    <br><br>
+
+    <div oncontextmenu="rightClickEvent(event)"
+         style="background-color: lightblue; padding: 20px;">
+        Right Click Here
+    </div>
+    <br>
+
+    <div onmouseenter="mouseEnterEvent()"
+         onmouseout="mouseOutEvent()"
+         onmousedown="mouseDownEvent()"
+         onmouseup="mouseUpEvent()"
+         style="background-color: lightgreen; padding: 30px;">
+        Mouse Events Area
+    </div>
+    <br>
+
+    <input type="text"
+           onkeypress="keyPressEvent()"
+           onkeyup="keyUpEvent()"
+           placeholder="Press any key">
+    <br><br>
+
+    <p id="result">Event Output</p>
+
+    <div style="height: 800px;"></div>
+
+    <script src="../JAVA_SCRIPT_FILE/23-JavaScript-Events.js"></script>
+
+</body>
+</html>
