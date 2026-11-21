@@ -106,3 +106,10 @@ HTML File (index.html)
 
 JavaScript File (myScript.js)
 alert("Welcome to Web Page");
+
+Loops in Java Script:-
+1.While Loop.
+2.Do/While Loop.
+3.For Loop.
+4.For/In Loop(Objects).
+5.ForEach Loop.
