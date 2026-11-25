@@ -113,3 +113,29 @@ Loops in Java Script:-
 3.For Loop.
 4.For/In Loop(Objects).
 5.ForEach Loop.
+
+JavaScript Arrays Method:-
+1.sort()
+2.reverse()
+3.pop()
+4.push()
+5.shift()
+6.unshift()
+7.concat()
+8.join()
+9.slice()
+11.splice()
+12.isArray()
+13.indexOf()
+15.lastIndexOf()
+16.entries()
+17.every()
+18.filter()
+19.find()
+20.findIndex()
+21.includes()
+22.some()
+23.forEach()
+24.toString()
+25.valueOf()
+26.fill()
