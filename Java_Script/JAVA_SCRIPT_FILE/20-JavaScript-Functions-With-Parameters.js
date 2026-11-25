@@ -50,3 +50,18 @@ function checkNumber(num) {
 }
 
 checkNumber(15);
+
+
+
+document.write("<br>")
+document.write("<br>")
+document.write("<hr>")
+
+
+function calculator(a,b){
+    document.write("Addition: " + (a + b) + "<br><br>");
+    document.write("Subtraction: " + (a - b) + "<br><br>");
+    document.write("Multriplication: " + (a * b) + "<br><br>");
+    document.write("Division: " + (a / b) + "<br><br>");
+}
+calculator(10,5)
