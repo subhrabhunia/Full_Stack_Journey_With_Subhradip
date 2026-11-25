@@ -1,5 +1,5 @@
 
-var a = [10, 20, 30, 40, 50,61,23,140,161,120];
+var a = [10, 20, 30, 40, 50,61,23];
 
 document.write("Original Array: " + a + "<br><br>");
 
