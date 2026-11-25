@@ -16,5 +16,5 @@ document.write("fill: " + d + "<br>");
 
 // fill Specific Elements
 var e = [10, 20, 30, 40, 50];
-e.fill(100, 1, 4);
+e.fill(100, 1, 4);  //array.fill(value, start, end);
 document.write("Specific Fill: " + e);
